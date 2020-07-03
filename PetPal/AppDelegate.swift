@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "PetPal")
+        let container = NSPersistentContainer(name: "Pets")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             print(storeDescription)
             if let error = error as NSError? {

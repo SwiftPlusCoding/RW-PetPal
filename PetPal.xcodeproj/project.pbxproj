@@ -20,9 +20,11 @@
 		DD952D6C1F56D8AA00AF81B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD952D6B1F56D8AA00AF81B8 /* Assets.xcassets */; };
 		DD952D6F1F56D8AA00AF81B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD952D6D1F56D8AA00AF81B8 /* LaunchScreen.storyboard */; };
 		DDB438961F579FDB0078BBAD /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB438951F579FDB0078BBAD /* Int+Extension.swift */; };
-		ED9F4A7124AAE7F100381864 /* PetPel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9F4A6F24AAE7F100381864 /* PetPel.xcdatamodeld */; };
+		ED15E2C424AF7C2200A25539 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E2C124AF7C2200A25539 /* Friend+CoreDataProperties.swift */; };
+		ED15E2C524AF7C2200A25539 /* Pet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E2C224AF7C2200A25539 /* Pet+CoreDataClass.swift */; };
+		ED15E2C624AF7C2200A25539 /* Pet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E2C324AF7C2200A25539 /* Pet+CoreDataProperties.swift */; };
+		ED9F4A7124AAE7F100381864 /* Pets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9F4A6F24AAE7F100381864 /* Pets.xcdatamodeld */; };
 		ED9F4A7424AAE9E300381864 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F4A7224AAE9E300381864 /* Friend+CoreDataClass.swift */; };
-		ED9F4A7524AAE9E300381864 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F4A7324AAE9E300381864 /* Friend+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +43,11 @@
 		DD952D6E1F56D8AA00AF81B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD952D701F56D8AA00AF81B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB438951F579FDB0078BBAD /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		ED15E2C124AF7C2200A25539 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED15E2C224AF7C2200A25539 /* Pet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED15E2C324AF7C2200A25539 /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ED9F4A7024AAE7F100381864 /* PetPel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetPel.xcdatamodel; sourceTree = "<group>"; };
 		ED9F4A7224AAE9E300381864 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
-		ED9F4A7324AAE9E300381864 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,7 @@
 				DD952D681F56D8AA00AF81B8 /* Main.storyboard */,
 				DD952D6B1F56D8AA00AF81B8 /* Assets.xcassets */,
 				DD952D6D1F56D8AA00AF81B8 /* LaunchScreen.storyboard */,
-				ED9F4A6F24AAE7F100381864 /* PetPel.xcdatamodeld */,
+				ED9F4A6F24AAE7F100381864 /* Pets.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -120,8 +124,10 @@
 		DD952D771F56D94300AF81B8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				ED15E2C124AF7C2200A25539 /* Friend+CoreDataProperties.swift */,
+				ED15E2C224AF7C2200A25539 /* Pet+CoreDataClass.swift */,
+				ED15E2C324AF7C2200A25539 /* Pet+CoreDataProperties.swift */,
 				ED9F4A7224AAE9E300381864 /* Friend+CoreDataClass.swift */,
-				ED9F4A7324AAE9E300381864 /* Friend+CoreDataProperties.swift */,
 				DD6B333F1F56E05F00F4C248 /* FriendData.swift */,
 				DD6B33411F56E1A900F4C248 /* PetData.swift */,
 			);
@@ -212,17 +218,19 @@
 			files = (
 				DD952D671F56D8AA00AF81B8 /* MainViewController.swift in Sources */,
 				ED9F4A7424AAE9E300381864 /* Friend+CoreDataClass.swift in Sources */,
+				ED15E2C524AF7C2200A25539 /* Pet+CoreDataClass.swift in Sources */,
 				DD6B33441F56EC2400F4C248 /* FriendCell.swift in Sources */,
 				DD6B333C1F56DAD800F4C248 /* PetsViewController.swift in Sources */,
 				DD719FFB1F578F96008392C8 /* Array+Extensions.swift in Sources */,
-				ED9F4A7524AAE9E300381864 /* Friend+CoreDataProperties.swift in Sources */,
 				DD952D651F56D8AA00AF81B8 /* AppDelegate.swift in Sources */,
 				DDB438961F579FDB0078BBAD /* Int+Extension.swift in Sources */,
-				ED9F4A7124AAE7F100381864 /* PetPel.xcdatamodeld in Sources */,
+				ED9F4A7124AAE7F100381864 /* Pets.xcdatamodeld in Sources */,
 				DD6B33461F56EC3300F4C248 /* PetCell.swift in Sources */,
+				ED15E2C624AF7C2200A25539 /* Pet+CoreDataProperties.swift in Sources */,
 				DD6B33421F56E1A900F4C248 /* PetData.swift in Sources */,
 				DD6B33401F56E05F00F4C248 /* FriendData.swift in Sources */,
 				DD719FFD1F579056008392C8 /* Date+Extension.swift in Sources */,
+				ED15E2C424AF7C2200A25539 /* Friend+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,13 +421,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ED9F4A6F24AAE7F100381864 /* PetPel.xcdatamodeld */ = {
+		ED9F4A6F24AAE7F100381864 /* Pets.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				ED9F4A7024AAE7F100381864 /* PetPel.xcdatamodel */,
 			);
 			currentVersion = ED9F4A7024AAE7F100381864 /* PetPel.xcdatamodel */;
-			path = PetPel.xcdatamodeld;
+			path = Pets.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
